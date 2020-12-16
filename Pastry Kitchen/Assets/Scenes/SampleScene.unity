@@ -458,6 +458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilBurn: 10
   fillImage: {fileID: 1492337546}
+  eCookwareType: 0
 --- !u!1 &280760866
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,6 +582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilBurn: 13
   fillImage: {fileID: 1230556122}
+  eCookwareType: 0
 --- !u!1 &422155539
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,6 +1231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilBurn: 13
   fillImage: {fileID: 1919710094}
+  eCookwareType: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2577,6 +2580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilBurn: 18
   fillImage: {fileID: 1155436066}
+  eCookwareType: 0
 --- !u!1 &1519477171
 GameObject:
   m_ObjectHideFlags: 0
@@ -3356,7 +3360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7139479609716334128, guid: 88b05cbbf4c0a3548a0e871dc5089073, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.26
+      value: -1.409
       objectReference: {fileID: 0}
     - target: {fileID: 7139479609716334128, guid: 88b05cbbf4c0a3548a0e871dc5089073, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3364,7 +3368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7139479609716334128, guid: 88b05cbbf4c0a3548a0e871dc5089073, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.29
+      value: -8.066
       objectReference: {fileID: 0}
     - target: {fileID: 7139479609716334128, guid: 88b05cbbf4c0a3548a0e871dc5089073, type: 3}
       propertyPath: m_LocalRotation.w
