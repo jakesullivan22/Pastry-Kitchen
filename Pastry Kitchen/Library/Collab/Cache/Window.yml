@@ -14,13 +14,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Scenes/SampleScene.unity
+    - Assets/Materials/1.mat
+    - Assets/Materials/1.mat.meta
+    - Assets/Materials/2.mat
+    - Assets/Materials/2.mat.meta
+    - Assets/Materials/3.mat
+    - Assets/Materials/3.mat.meta
+    - Assets/Materials/4.mat
+    - Assets/Materials/4.mat.meta
+    - Assets/Materials/5.mat
+    - Assets/Materials/5.mat.meta
+    - Assets/Materials/6.mat
+    - Assets/Materials/6.mat.meta
+    - Assets/Materials/7.mat
+    - Assets/Materials/7.mat.meta
+    - Assets/Prefabs/Character.prefab
+    - Assets/Prefabs/Table.prefab
+    - Assets/Ref.meta
+    - Assets/Ref/image.2.png
+    - Assets/Ref/image.2.png.meta
+    - Assets/Scenes/BoxOut-Jake.unity
+    - Assets/Scenes/BoxOut-Jake.unity.meta
+    - Assets/Scenes/BoxOut1.unity
+    - Assets/Scenes/BoxOut1.unity.meta
+    - Assets/Scenes/RoughDraftScene.unity
+    - Assets/Scenes/RoughDraftScene.unity.meta
     - Assets/Scripts/Cookware.cs
     - Assets/Scripts/TestUploadScript.cs
     - Assets/Scripts/TestUploadScript.cs.meta
     - ProjectSettings/ProjectVersion.txt
     - 
-    m_Values: 000000000000
+    m_Values: 000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
