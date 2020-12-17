@@ -39,12 +39,16 @@ MonoBehaviour:
     - Assets/Scenes/BoxOut1.unity.meta
     - Assets/Scenes/RoughDraftScene.unity
     - Assets/Scenes/RoughDraftScene.unity.meta
+    - Assets/Scripts/CameraController.cs
     - Assets/Scripts/Cookware.cs
+    - Assets/Scripts/PlayerController.cs
     - Assets/Scripts/TestUploadScript.cs
     - Assets/Scripts/TestUploadScript.cs.meta
+    - Assets/player.physicMaterial
+    - Assets/player.physicMaterial.meta
     - ProjectSettings/ProjectVersion.txt
     - 
-    m_Values: 000000000000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

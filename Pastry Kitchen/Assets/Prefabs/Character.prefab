@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 254758013118276495}
   - component: {fileID: 3623328574234913526}
   - component: {fileID: 8188125130664237296}
+  - component: {fileID: 1426376255}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -174,7 +175,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4727049164891987821}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ddd665fcb0d31b84eab27dd2145e4c09, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
@@ -193,6 +194,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04383bba48a30b44b565efaff8e607f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minDistanceToBurner: 2.5
+  rb: {fileID: 0}
+  maxSpeed: 7
+  timeToTurn: 1
+  timeToSlowDown: 0.1
+--- !u!54 &1426376255
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4727049164891987821}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1 &5774139233094883738
 GameObject:
   m_ObjectHideFlags: 0

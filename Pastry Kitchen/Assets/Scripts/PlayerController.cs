@@ -1,35 +1,78 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public static int position;
-    float distanceBehindBurner = 2f;
+    public static PlayerController player;
+    public static float distanceBehindBurner = 2f;
+    public float minDistanceToBurner = 2f;
+    public Rigidbody rb;
+    public float maxSpeed = 7f;
+
+    public float timeToTurn = 1f;
+    public float timeToSlowDown = .1f;
   
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        MoveToPosition(LevelManager.manager.startPosition);
+        player = this;
+        rb = GetComponent<Rigidbody>();
     }
 
-    void MoveToPosition(int _position)
+    IEnumerator Turn()
     {
-        Vector3 targetBurner = LevelManager.manager.burners[_position].position;
-        transform.position = targetBurner - Vector3.forward * distanceBehindBurner;
-        position = _position;
+        float timer = 0f;
+        while (timer < timeToTurn)
+        {
+            timer += Time.deltaTime;
+            if (rb.velocity != Vector3.zero)
+            {
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(rb.velocity, Vector3.up), timer / timeToTurn);
+            }
+            yield return null;
+        }
+    }
+
+    public IEnumerator SlowDown()
+    {
+        float timer = 0f;
+        Vector3 initialVelocity = rb.velocity;
+        while (timer < timeToSlowDown)
+        {
+            timer += Time.deltaTime;
+            rb.velocity = Vector3.Lerp(initialVelocity, Vector3.zero, timer / timeToSlowDown);
+            yield return null;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Horizontal") && !CameraController.isZoomedIn)
+        if (!CameraController.isZoomedIn)
         {
-            if (Input.GetAxisRaw("Horizontal") > 0f)
+            float x = Input.GetAxisRaw("Horizontal");
+            float z = Input.GetAxisRaw("Vertical");
+
+            if (Mathf.Abs(x) + Mathf.Abs(z) > 0)
             {
-                MoveToPosition(Mathf.Min(position + 1, LevelManager.manager.burners.Length - 1));
-            } 
-            else if (Input.GetAxisRaw("Horizontal") < 0f)
+                rb.AddForce((x * Vector3.right + z * Vector3.forward) * maxSpeed);
+                Vector3 rightQuickTurn = Vector3.right * Mathf.Clamp(rb.velocity.x, Mathf.Min(x * maxSpeed, 0), Mathf.Max(x * maxSpeed, 0));
+                Vector3 forwardQuickTurn = Vector3.forward * Mathf.Clamp(rb.velocity.z, Mathf.Min(z * maxSpeed, 0), Mathf.Max(z * maxSpeed, 0));
+                rb.velocity = rightQuickTurn + forwardQuickTurn;
+                rb.velocity = rb.velocity.normalized * Mathf.Min(rb.velocity.magnitude, maxSpeed);
+
+            }
+
+            if (Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical"))
             {
-                MoveToPosition(Mathf.Max(position - 1, 0));
+                StopAllCoroutines();
+                StartCoroutine(Turn());
+            }
+
+            if ((Input.GetButtonUp("Horizontal") && !Input.GetButton("Vertical")) || (Input.GetButtonUp("Vertical") && !Input.GetButton("Horizontal")))
+            {
+                StartCoroutine(SlowDown());
             }
         }
     }
