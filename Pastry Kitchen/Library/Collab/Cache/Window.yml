@@ -38,6 +38,8 @@ MonoBehaviour:
     - Assets/Materials/BlueGreen.mat.meta
     - Assets/Materials/Brick.mat
     - Assets/Materials/Brick.mat.meta
+    - Assets/Materials/DarkRed.mat
+    - Assets/Materials/DarkRed.mat.meta
     - Assets/Materials/Grey.mat
     - Assets/Materials/Grey.mat.meta
     - Assets/Materials/White.mat
@@ -51,28 +53,46 @@ MonoBehaviour:
     - Assets/Meshes/SoupPotLid.FBX.meta
     - Assets/Meshes/Steamer.FBX.meta
     - Assets/Prefabs.meta
+    - Assets/Prefabs/Bowls.prefab
+    - Assets/Prefabs/Bowls.prefab.meta
     - Assets/Prefabs/Character.prefab
     - Assets/Prefabs/Character.prefab.meta
     - Assets/Prefabs/DeepFryer.prefab
     - Assets/Prefabs/DeepFryer.prefab.meta
     - Assets/Prefabs/PancakePan.prefab
     - Assets/Prefabs/PancakePan.prefab.meta
+    - Assets/Prefabs/PreparedBeans.prefab
+    - Assets/Prefabs/PreparedBeans.prefab.meta
+    - Assets/Prefabs/SoupContainer.prefab
+    - Assets/Prefabs/SoupContainer.prefab.meta
     - Assets/Prefabs/SoupPot.prefab
     - Assets/Prefabs/SoupPot.prefab.meta
     - Assets/Prefabs/SoupPotLid.prefab
     - Assets/Prefabs/SoupPotLid.prefab.meta
     - Assets/Prefabs/Steamer.prefab
     - Assets/Prefabs/Steamer.prefab.meta
+    - Assets/Prefabs/SteamerCloth.prefab
+    - Assets/Prefabs/SteamerCloth.prefab.meta
     - Assets/Prefabs/Table.prefab
     - Assets/Prefabs/Table.prefab.meta
+    - Assets/Prefabs/cMainMenu.prefab
+    - Assets/Prefabs/cMainMenu.prefab.meta
+    - Assets/Prefabs/cOptionsMenu.prefab
+    - Assets/Prefabs/cOptionsMenu.prefab.meta
+    - Assets/Prefabs/cSetUp.prefab
+    - Assets/Prefabs/cSetUp.prefab.meta
     - Assets/Ref.meta
     - Assets/Ref/image.2.png
     - Assets/Ref/image.2.png.meta
     - Assets/Scenes.meta
     - Assets/Scenes/BoxOut-Jake.unity
     - Assets/Scenes/BoxOut-Jake.unity.meta
+    - Assets/Scenes/BoxOut1-Rose.unity
+    - Assets/Scenes/BoxOut1-Rose.unity.meta
     - Assets/Scenes/BoxOut1.unity
     - Assets/Scenes/BoxOut1.unity.meta
+    - Assets/Scenes/FrontEnd.unity
+    - Assets/Scenes/FrontEnd.unity.meta
     - Assets/Scenes/RoughDraftScene.unity
     - Assets/Scenes/RoughDraftScene.unity.meta
     - Assets/Scenes/SampleScene.unity
@@ -82,11 +102,17 @@ MonoBehaviour:
     - Assets/Scripts/CameraController.cs.meta
     - Assets/Scripts/Cookware.cs
     - Assets/Scripts/Cookware.cs.meta
+    - Assets/Scripts/GameManager.cs
+    - Assets/Scripts/GameManager.cs.meta
     - Assets/Scripts/LevelManager.cs.meta
     - Assets/Scripts/PlayerController.cs
     - Assets/Scripts/PlayerController.cs.meta
     - Assets/Scripts/TestUploadScript.cs
     - Assets/Scripts/TestUploadScript.cs.meta
+    - Assets/Scripts/cMainMenu.cs
+    - Assets/Scripts/cMainMenu.cs.meta
+    - Assets/Scripts/cOptions.cs
+    - Assets/Scripts/cOptions.cs.meta
     - Assets/player.physicMaterial
     - Assets/player.physicMaterial.meta
     - Packages/manifest.json
@@ -110,7 +136,7 @@ MonoBehaviour:
     - ProjectSettings/VFXManager.asset
     - ProjectSettings/VersionControlSettings.asset
     - 
-    m_Values: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
