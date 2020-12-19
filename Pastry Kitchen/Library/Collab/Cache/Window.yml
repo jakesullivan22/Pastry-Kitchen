@@ -14,8 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - .collabignore
-    - Assets/Materials.meta
     - Assets/Materials/1.mat
     - Assets/Materials/1.mat.meta
     - Assets/Materials/2.mat
@@ -30,51 +28,31 @@ MonoBehaviour:
     - Assets/Materials/6.mat.meta
     - Assets/Materials/7.mat
     - Assets/Materials/7.mat.meta
-    - Assets/Materials/Bamboo.mat
-    - Assets/Materials/Bamboo.mat.meta
-    - Assets/Materials/Black.mat
-    - Assets/Materials/Black.mat.meta
-    - Assets/Materials/BlueGreen.mat
-    - Assets/Materials/BlueGreen.mat.meta
-    - Assets/Materials/Brick.mat
-    - Assets/Materials/Brick.mat.meta
     - Assets/Materials/DarkRed.mat
     - Assets/Materials/DarkRed.mat.meta
-    - Assets/Materials/Grey.mat
-    - Assets/Materials/Grey.mat.meta
     - Assets/Materials/White.mat
-    - Assets/Materials/White.mat.meta
-    - Assets/Materials/Wood.mat
-    - Assets/Materials/Wood.mat.meta
-    - Assets/Meshes.meta
-    - Assets/Meshes/DeepFryer.FBX.meta
-    - Assets/Meshes/PancakePan.FBX.meta
-    - Assets/Meshes/SoupPot.FBX.meta
-    - Assets/Meshes/SoupPotLid.FBX.meta
-    - Assets/Meshes/Steamer.FBX.meta
-    - Assets/Prefabs.meta
     - Assets/Prefabs/Bowls.prefab
     - Assets/Prefabs/Bowls.prefab.meta
     - Assets/Prefabs/Character.prefab
-    - Assets/Prefabs/Character.prefab.meta
     - Assets/Prefabs/DeepFryer.prefab
-    - Assets/Prefabs/DeepFryer.prefab.meta
+    - Assets/Prefabs/Ladle.prefab
+    - Assets/Prefabs/Ladle.prefab.meta
     - Assets/Prefabs/PancakePan.prefab
-    - Assets/Prefabs/PancakePan.prefab.meta
     - Assets/Prefabs/PreparedBeans.prefab
     - Assets/Prefabs/PreparedBeans.prefab.meta
     - Assets/Prefabs/SoupContainer.prefab
     - Assets/Prefabs/SoupContainer.prefab.meta
     - Assets/Prefabs/SoupPot.prefab
-    - Assets/Prefabs/SoupPot.prefab.meta
-    - Assets/Prefabs/SoupPotLid.prefab
-    - Assets/Prefabs/SoupPotLid.prefab.meta
+    - Assets/Prefabs/Spatula.prefab
+    - Assets/Prefabs/Spatula.prefab.meta
     - Assets/Prefabs/Steamer.prefab
-    - Assets/Prefabs/Steamer.prefab.meta
     - Assets/Prefabs/SteamerCloth.prefab
     - Assets/Prefabs/SteamerCloth.prefab.meta
+    - Assets/Prefabs/Strainer Ladle.prefab
+    - Assets/Prefabs/Strainer Ladle.prefab.meta
+    - Assets/Prefabs/SweetThinPancake.prefab
+    - Assets/Prefabs/SweetThinPancake.prefab.meta
     - Assets/Prefabs/Table.prefab
-    - Assets/Prefabs/Table.prefab.meta
     - Assets/Prefabs/cMainMenu.prefab
     - Assets/Prefabs/cMainMenu.prefab.meta
     - Assets/Prefabs/cOptionsMenu.prefab
@@ -84,7 +62,6 @@ MonoBehaviour:
     - Assets/Ref.meta
     - Assets/Ref/image.2.png
     - Assets/Ref/image.2.png.meta
-    - Assets/Scenes.meta
     - Assets/Scenes/BoxOut-Jake.unity
     - Assets/Scenes/BoxOut-Jake.unity.meta
     - Assets/Scenes/BoxOut1-Rose.unity
@@ -95,15 +72,15 @@ MonoBehaviour:
     - Assets/Scenes/FrontEnd.unity.meta
     - Assets/Scenes/RoughDraftScene.unity
     - Assets/Scenes/RoughDraftScene.unity.meta
-    - Assets/Scenes/SampleScene.unity
-    - Assets/Scenes/SampleScene.unity.meta
-    - Assets/Scripts.meta
     - Assets/Scripts/CameraController.cs
     - Assets/Scripts/CameraController.cs.meta
     - Assets/Scripts/Cookware.cs
     - Assets/Scripts/Cookware.cs.meta
+    - Assets/Scripts/Food.cs
+    - Assets/Scripts/Food.cs.meta
     - Assets/Scripts/GameManager.cs
     - Assets/Scripts/GameManager.cs.meta
+    - Assets/Scripts/LevelManager.cs
     - Assets/Scripts/LevelManager.cs.meta
     - Assets/Scripts/PlayerController.cs
     - Assets/Scripts/PlayerController.cs.meta
@@ -117,26 +94,9 @@ MonoBehaviour:
     - Assets/player.physicMaterial.meta
     - Packages/manifest.json
     - Packages/packages-lock.json
-    - ProjectSettings/AudioManager.asset
-    - ProjectSettings/ClusterInputManager.asset
-    - ProjectSettings/DynamicsManager.asset
-    - ProjectSettings/EditorBuildSettings.asset
-    - ProjectSettings/EditorSettings.asset
-    - ProjectSettings/GraphicsSettings.asset
-    - ProjectSettings/InputManager.asset
-    - ProjectSettings/NavMeshAreas.asset
-    - ProjectSettings/Physics2DSettings.asset
-    - ProjectSettings/PresetManager.asset
-    - ProjectSettings/ProjectSettings.asset
     - ProjectSettings/ProjectVersion.txt
-    - ProjectSettings/QualitySettings.asset
-    - ProjectSettings/TagManager.asset
-    - ProjectSettings/TimeManager.asset
-    - ProjectSettings/UnityConnectSettings.asset
-    - ProjectSettings/VFXManager.asset
-    - ProjectSettings/VersionControlSettings.asset
     - 
-    m_Values: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
